@@ -20,7 +20,7 @@ endmodule
 
 module And(input a, b, output out);
   Nand g1(a, b, AnandB);
-  Nand g2(AnandB, AnandB, out);
+  Not g2(AnandB, out);
 endmodule
 
 module Or8Way(input[7:0] in, output out);
